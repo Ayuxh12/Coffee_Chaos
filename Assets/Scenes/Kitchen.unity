@@ -380,6 +380,18 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &197692026 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7703664332357891391, guid: e130f4cf82cfa7741a31cf67ba063f65,
+    type: 3}
+  m_PrefabInstance: {fileID: 1802573299}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2d92fbac0ffaa49996758cd3ec5f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &317759422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -693,6 +705,37 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!1 &908140740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908140741}
+  m_Layer: 0
+  m_Name: KitchenObjectHoldPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908140741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908140740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.775, y: -0.358, z: 0.358}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1397758870}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1227736105
 GameObject:
   m_ObjectHideFlags: 3
@@ -840,6 +883,7 @@ MonoBehaviour:
   countersLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  kitchenObjectHoldPoint: {fileID: 908140741}
 --- !u!4 &1397758870
 Transform:
   m_ObjectHideFlags: 0
@@ -854,6 +898,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1932584420}
+  - {fileID: 908140741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1412124479
@@ -1083,7 +1128,7 @@ PrefabInstance:
     - target: {fileID: 1487488234575746798, guid: e130f4cf82cfa7741a31cf67ba063f65,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.85
+      value: 3.895
       objectReference: {fileID: 0}
     - target: {fileID: 1487488234575746798, guid: e130f4cf82cfa7741a31cf67ba063f65,
         type: 3}
@@ -1141,13 +1186,19 @@ PrefabInstance:
         type: 3}
       propertyPath: tomatoprefab
       value: 
-      objectReference: {fileID: 3670180515268326489, guid: d3fa7da6c09fc1d44b0fd5caa954387e,
+      objectReference: {fileID: 3670180515268326489, guid: 57d73bf931666fd4eae2f0bc5d00b7bc,
         type: 3}
     - target: {fileID: 7703664332357891391, guid: e130f4cf82cfa7741a31cf67ba063f65,
         type: 3}
       propertyPath: counterTopPoint
       value: 
       objectReference: {fileID: 1528641225}
+    - target: {fileID: 7703664332357891391, guid: e130f4cf82cfa7741a31cf67ba063f65,
+        type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: b7441b557f3adc94ebe5c960535a8a38,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1279,7 +1330,7 @@ PrefabInstance:
     - target: {fileID: 1487488234575746798, guid: e130f4cf82cfa7741a31cf67ba063f65,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.85
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 1487488234575746798, guid: e130f4cf82cfa7741a31cf67ba063f65,
         type: 3}
@@ -1334,6 +1385,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7703664332357891391, guid: e130f4cf82cfa7741a31cf67ba063f65,
         type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703664332357891391, guid: e130f4cf82cfa7741a31cf67ba063f65,
+        type: 3}
       propertyPath: tomatoprefab
       value: 
       objectReference: {fileID: 3670180515268326489, guid: d3fa7da6c09fc1d44b0fd5caa954387e,
@@ -1343,6 +1399,11 @@ PrefabInstance:
       propertyPath: counterTopPoint
       value: 
       objectReference: {fileID: 3688896000174506572}
+    - target: {fileID: 7703664332357891391, guid: e130f4cf82cfa7741a31cf67ba063f65,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 197692026}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
