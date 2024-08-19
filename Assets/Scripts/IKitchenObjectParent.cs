@@ -9,4 +9,5 @@ public interface IKitchenObjectParent
     public KitchenObject GetKitchenObject();
     public void clearKitchenObject();
     public bool HasKitchenObject();
+    //public void ClearKitchenObject();
 }
